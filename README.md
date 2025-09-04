@@ -70,6 +70,7 @@ export default tseslint.config([
   },
 ])
 ```
+
 #Boolean Design System
 
 
@@ -106,27 +107,28 @@ Avviamo sul nostro browser la nostra prima pagina di StoryBook.
 `npm install @types/react @types/react-dom @typescript-eslint/eslint-plugin @typescript-eslint/parser typescript`
 
 Creiamo nella root di progetto un file tsconfig.json con il seguente contenuto
+
 ````JSON
 {
-	"compilerOptions": {
-		"target": "ES2020",
-		"useDefineForClassFields": true,
-		"lib": ["ES2020", "DOM", "DOM.Iterable"],
-		"module": "ESNext",
-		"skipLibCheck": true,
-		"moduleResolution": "bundler",
-		"allowImportingTsExtensions": true,
-		"resolveJsonModule": true,
-		"isolatedModules": true,
-		"noEmit": true,
-		"jsx": "react-jsx",
-		"strict": true,
-		"noUnusedLocals": true,
-		"noUnusedParameters": true,
-		"noFallthroughCasesInSwitch": true,
-		"esModuleInterop": true,
-		"allowSyntheticDefaultImports": true
-	},
-	"include": ["stories", ".storybook", "components"]
+ "compilerOptions": {
+  "target": "ES2020",
+  "useDefineForClassFields": true,
+  "lib": ["ES2020", "DOM", "DOM.Iterable"],
+  "module": "ESNext",
+  "skipLibCheck": true,
+  "moduleResolution": "bundler",
+  "allowImportingTsExtensions": true,
+  "resolveJsonModule": true,
+  "isolatedModules": true,
+  "noEmit": true,
+  "jsx": "react-jsx",
+  "strict": true,
+  "noUnusedLocals": true,
+  "noUnusedParameters": true,
+  "noFallthroughCasesInSwitch": true,
+  "esModuleInterop": true,
+  "allowSyntheticDefaultImports": true
+ },
+ "include": ["stories", ".storybook", "components"]
 } 
 ```
